@@ -1,4 +1,4 @@
-# FREECODECAMP
+# FreeCodeCamp
 ## Responsive Web Design Certification
 ### Survey Form
 ### Tribute Page
