@@ -5,7 +5,31 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	<body>
-		<main></main>
+		<main>
+			<h1 id="title" class="no-margin">the adobe donut</h1>
+			<p id="description" class="no-margin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aspernatur blanditiis ex placeat alias maxime praesentium quasi eaque iusto, unde soluta voluptates non quam culpa ea ullam beatae delectus voluptatem?</p>
+			<form id="survey-form">
+				<fieldset class="no-padding">
+					<legend class="no-padding">
+						<h2 class="no-margin legend-title">create your donut</h2>
+					</legend>
+				</fieldset>
+				<fieldset class="no-padding">
+					<legend class="no-padding">
+						<h2 class="no-margin legend-title">contact info</h2>
+					</legend>
+					<label id="name-label" for="name">
+						<h3 class="input-label no-margin">your name:</h3>
+						<input type="text" id="name" placeholder="Your name" required>
+					</label>
+					<label id="email-label" for="email">
+						<h3 class="input-label no-margin">your email:</h3>
+						<input id="email" type="email" placeholder="Your email" required>
+					</label>
+				</fieldset>
+				<input id="submit" type="submit" value="submit">
+			</form>
+		</main>
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
