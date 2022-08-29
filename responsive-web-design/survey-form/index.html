@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	<body>
-		<main>
+		<main class="container">
 			<h1 id="title" class="no-margin">the adobe donut</h1>
 			<p id="description" class="no-margin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aspernatur blanditiis ex placeat alias maxime praesentium quasi eaque iusto, unde soluta voluptates non quam culpa ea ullam beatae delectus voluptatem?</p>
 			<form id="survey-form">
@@ -13,6 +13,10 @@
 					<legend class="no-padding">
 						<h2 class="no-margin legend-title">create your donut</h2>
 					</legend>
+					<label id="number-label" for="number">
+						<h3 class="input-label no-margin">how many donuts would you like?</h3>
+						<input id="number" type="number" min="1" max="12" placeholder="1" required>
+					</label>
 				</fieldset>
 				<fieldset class="no-padding">
 					<legend class="no-padding">
