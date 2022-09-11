@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>freeCodeCamp | Survey Form</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>FreeCodeCamp | Survey Form</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<main class="container">
-			<h1 id="title" class="no-margin">the adobe donut</h1>
-			<p id="description" class="no-margin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aspernatur blanditiis ex placeat alias maxime praesentium quasi eaque iusto, unde soluta voluptates non quam culpa ea ullam beatae delectus voluptatem?</p>
-			<form id="survey-form">
-				<fieldset class="no-padding">
-					<legend class="no-padding">
-						<h2 class="no-margin legend-title">create your donut</h2>
-					</legend>
-					<label id="number-label" for="number" class="flex-container">
-						<h3 class="input-label no-margin">how many donuts would you like?</h3>
-						<input id="number" type="number" min="1" max="12" placeholder="1" required>
-					</label>
-				</fieldset>
-				<fieldset class="no-padding">
-					<legend class="no-padding">
-						<h2 class="no-margin legend-title">contact info</h2>
-					</legend>
-					<label id="name-label" for="name" class="flex-container">
-						<h3 class="input-label no-margin">your name:</h3>
-						<input type="text" id="name" placeholder="Your name" required>
-					</label>
-					<label id="email-label" for="email" class="flex-container">
-						<h3 class="input-label no-margin">your email:</h3>
-						<input id="email" type="email" placeholder="Your email" required>
-					</label>
-				</fieldset>
-				<input id="submit" type="submit" value="submit">
-			</form>
+		<main id="main" class="no-margin">
+			<div id="container" class="bbox">
+				<header>
+					<h1 id="title" class="no-margin pink-text uppercase">the adobe <span class="dark-grey-text">donut</span></h1>
+					<p id="description" class="no-margin light-grey-text">Not only is the Adobe Donut <span class="pink-text">XD-Pink</span>, but it also tasted like a grid. Delicious!</p>
+				</header>
+				<form id="survey-form" class="flex column-flex">
+					<fieldset id="donut" class="no-padding">
+						<legend>
+							<h2 class="no-margin uppercase">build your donut</h2>
+						</legend>
+
+						<div id="radios" class="flex row-flex">
+							<div class="flex row-flex radio-input black-border">
+								<input id="vanilla" type="radio" name="base" value="vanilla">
+								<label for="vanilla" class="flex">vanilla</label>
+							</div>
+							<div class="flex row-flex radio-input black-border">
+								<input id="chocolate" type="radio" name="base" value="chocolate">
+								<label for="chocolate" class="flex">chocolate</label>
+							</div>
+							<div class="flex row-flex radio-input black-border">
+								<input id="lemon" type="radio" name="base" value="lemon">
+								<label for="lemon" class="flex">lemon</label>
+							</div>
+						</div>
+
+						<div id="checkboxes" class="flex row-flex">
+							<div class="flex row-flex checkbox-input">
+								<input id="sprinkles" type="checkbox" name="toppings" value="sprinkles">
+								<label for="sprinkles">sprinkles</label>
+							</div>
+							<div class="flex row-flex checkbox-input">
+								<input id="chocolate-chips" type="checkbox" name="toppings" value="chocolate-chips">
+								<label for="chocolate-chips">chocolate chips</label>
+							</div>
+							<div class="flex row-flex checkbox-input">
+								<input id="caramel" type="checkbox" name="toppings" value="caramel">
+								<label for="caramel">caramel</label>
+							</div>
+							<div class="flex row-flex checkbox-input">
+								<input id="walnuts" type="checkbox" name="toppings" value="walnuts">
+								<label for="walnuts">walnuts</label>
+							</div>
+							<div class="flex row-flex checkbox-input">
+								<input id="blueberries" type="checkbox" name="toppings" value="blueberries">
+								<label for="blueberries">blueberries</label>
+							</div>
+							<div class="flex row-flex checkbox-input">
+								<input id="coconut" type="checkbox" name="toppings" value="coconut">
+								<label for="coconut">coconut</label>
+							</div>
+						</div>
+
+						<label for="number" id="number-label" class="flex column-flex">
+							<h3 class="no-margin">how many donuts would you like?</h3>
+							<input id="number" type="number" min="1" max="12" placeholder="1" required>
+						</label>
+					</fieldset>
+					<fieldset id="contact-info" class="no-padding">
+						<legend>
+							<h2 class="no-margin uppercase">contact info</h2>
+						</legend>
+						<label for="name" id="name-label" class="flex column-flex">
+							<h3 class="no-margin">your name:</h3>
+							<input id="name" type="text" placeholder="your name" required>
+						</label>
+						<label for="email" id="email-label" class="flex column-flex">
+							<h3 class="no-margin">your email:</h3>
+							<input id="email" type="email" placeholder="your email" required>
+						</label>
+					</fieldset>
+					<input id="submit" type="submit" value="submit">
+				</form>
+			</div>
 		</main>
-		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
