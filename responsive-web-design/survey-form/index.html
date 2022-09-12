@@ -3,11 +3,13 @@
 	<head>
 		<title>FreeCodeCamp | Survey Form</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	</head>
 	<body>
 		<main id="main" class="no-margin">
 			<div id="container" class="bbox">
 				<header>
+					<hr class="no-margin">
 					<h1 id="title" class="no-margin pink-text uppercase">the adobe <span class="dark-grey-text">donut</span></h1>
 					<p id="description" class="no-margin light-grey-text">Not only is the Adobe Donut <span class="pink-text">XD-Pink</span>, but it also tasted like a grid. Delicious!</p>
 				</header>
@@ -37,7 +39,7 @@
 
 						<div class="flex column-flex input-segment">
 							<h3 class="no-margin">choose the icing:</h3>
-							<select id="dropdown" name="icing">
+							<select id="dropdown" class="bbox full-width-input" name="icing">
 								<option value="vanilla">vanilla</option>
 								<option value="chocolate">chocolate</option>
 								<option value="lemon">lemon</option>
@@ -77,7 +79,7 @@
 
 						<label for="number" id="number-label" class="flex column-flex">
 							<h3 class="no-margin">how many donuts would you like?</h3>
-							<input id="number" type="number" min="1" max="12" placeholder="1" required>
+							<input id="number" class="bbox full-width-input" type="number" min="1" max="12" placeholder="1" required>
 						</label>
 					</fieldset>
 					<fieldset id="contact-info" class="no-padding">
@@ -86,18 +88,18 @@
 						</legend>
 						<label for="name" id="name-label" class="flex column-flex">
 							<h3 class="no-margin">your name:</h3>
-							<input id="name" type="text" placeholder="your name" required>
+							<input id="name" class="bbox full-width-input" type="text" placeholder="your name" required>
 						</label>
 						<label for="email" id="email-label" class="flex column-flex">
 							<h3 class="no-margin">your email:</h3>
-							<input id="email" type="email" placeholder="your email" required>
+							<input id="email" class="bbox full-width-input" type="email" placeholder="your email" required>
 						</label>
 						<label for="comments" class="flex column-flex">
 							<h3 class="no-margin">comments:</h3>
-							<textarea id="comments"></textarea>
+							<textarea id="comments" class="bbox full-width-input" placeholder="tell us what we need to know"></textarea>
 						</label>
 					</fieldset>
-					<input id="submit" type="submit" value="submit">
+					<button id="submit" type="submit" value="submit" class="flex row-flex uppercase"><i class="fa-solid fa-cart-shopping fa-2x"></i> <span>Add to cart</span></button>
 				</form>
 			</div>
 		</main>
