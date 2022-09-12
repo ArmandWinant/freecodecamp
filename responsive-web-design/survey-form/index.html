@@ -4,23 +4,26 @@
 		<title>FreeCodeCamp | Survey Form</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<main id="main" class="no-margin">
 			<div id="container" class="bbox">
-				<header>
+				<header class="flex column-flex">
 					<hr class="no-margin">
-					<h1 id="title" class="no-margin pink-text uppercase">the adobe <span class="dark-grey-text">donut</span></h1>
-					<p id="description" class="no-margin light-grey-text">Not only is the Adobe Donut <span class="pink-text">XD-Pink</span>, but it also tasted like a grid. Delicious!</p>
+					<h1 id="title" class="no-margin pink-text uppercase condensed-text">the adobe <span class="dark-grey-text">donut</span></h1>
+					<p id="description" class="no-margin light-grey-text regular-text">Not only is the Adobe Donut <span class="pink-text">XD-Pink</span>, but it also tasted like a grid. Delicious!</p>
 				</header>
 				<form id="survey-form" class="flex column-flex">
-					<fieldset id="donut" class="no-padding">
+					<fieldset id="donut" class="bbox">
 						<legend>
-							<h2 class="no-margin uppercase">build your donut</h2>
+							<h2 class="no-margin uppercase condensed-text">build your donut</h2>
 						</legend>
 
-						<div class="input-segment">
-							<h3 class="no-margin">pick a base:</h3>
+						<div class="input-segment regular-text">
+							<h3 class="no-margin condensed-text">pick a base:</h3>
 							<div id="radios" class="flex row-flex">
 								<div class="flex row-flex radio-input black-border">
 									<input id="vanilla" type="radio" name="base" value="vanilla" checked>
@@ -37,8 +40,8 @@
 							</div>
 						</div>
 
-						<div class="flex column-flex input-segment">
-							<h3 class="no-margin">choose the icing:</h3>
+						<div class="flex column-flex input-segment regular-text">
+							<h3 class="no-margin condensed-text">choose the icing:</h3>
 							<select id="dropdown" class="bbox full-width-input" name="icing">
 								<option value="vanilla">vanilla</option>
 								<option value="chocolate">chocolate</option>
@@ -47,9 +50,9 @@
 							</select>
 						</div>
 
-						<div class="input-segment">
-							<h3 class="no-margin">add some toppings:</h3>
-							<div id="checkboxes" class="flex row-flex">
+						<div class="input-segment regular-text">
+							<h3 class="no-margin condensed-text">add some toppings:</h3>
+							<div id="checkboxes" class="">
 								<div class="flex row-flex checkbox-input black-border">
 									<input id="sprinkles" type="checkbox" name="toppings" value="sprinkles">
 									<label for="sprinkles" class="flex">sprinkles</label>
@@ -78,28 +81,29 @@
 						</div>
 
 						<label for="number" id="number-label" class="flex column-flex">
-							<h3 class="no-margin">how many donuts would you like?</h3>
+							<h3 class="no-margin condensed-text">how many donuts would you like?</h3>
 							<input id="number" class="bbox full-width-input" type="number" min="1" max="12" placeholder="1" required>
 						</label>
 					</fieldset>
-					<fieldset id="contact-info" class="no-padding">
+
+					<fieldset id="contact-info" class="bbox">
 						<legend>
-							<h2 class="no-margin uppercase">contact info</h2>
+							<h2 class="no-margin uppercase condensed-text">contact info</h2>
 						</legend>
 						<label for="name" id="name-label" class="flex column-flex">
-							<h3 class="no-margin">your name:</h3>
+							<h3 class="no-margin condensed-text">your name:</h3>
 							<input id="name" class="bbox full-width-input" type="text" placeholder="your name" required>
 						</label>
 						<label for="email" id="email-label" class="flex column-flex">
-							<h3 class="no-margin">your email:</h3>
+							<h3 class="no-margin condensed-text">your email:</h3>
 							<input id="email" class="bbox full-width-input" type="email" placeholder="your email" required>
 						</label>
 						<label for="comments" class="flex column-flex">
-							<h3 class="no-margin">comments:</h3>
+							<h3 class="no-margin condensed-text">comments:</h3>
 							<textarea id="comments" class="bbox full-width-input" placeholder="tell us what we need to know"></textarea>
 						</label>
 					</fieldset>
-					<button id="submit" type="submit" value="submit" class="flex row-flex uppercase"><i class="fa-solid fa-cart-shopping fa-2x"></i> <span>Add to cart</span></button>
+					<button id="submit" type="submit" value="submit" class="flex row-flex uppercase full-width-input"><i class="fa-solid fa-cart-shopping fa-2x"></i> <span>Add to cart</span></button>
 				</form>
 			</div>
 		</main>

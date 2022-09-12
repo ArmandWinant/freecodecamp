@@ -37,6 +37,14 @@
 	color: var(--teal-blue);
 }
 
+.condensed-text {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.regular-text {
+	font-family: 'Montserrat', sans-serif;
+}
+
 body {
 	margin: 0;
 }
@@ -54,11 +62,15 @@ body {
 
 #container {
 	width: 90vw;
-	max-width: 450px;
-	padding: 30px;
+	max-width: 500px;
+	padding: 40px;
 
 	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: 32px 130px 32px 32px;
+}
+
+header {
+	gap: 15px;
 }
 
 header hr {
@@ -98,6 +110,12 @@ header hr {
 	line-height: 27px;
 }
 
+fieldset {
+	padding: 20px;
+	border: 2px solid var(--teal-blue);
+	border-radius: 10px;
+}
+
 input[type="radio"], input[type="checkbox"] {
 	opacity: 0;
   position: fixed;
@@ -106,8 +124,10 @@ input[type="radio"], input[type="checkbox"] {
 
 input[type="radio"] + label {
 	width: 100px;
+	height: 30px;
 	background: var(--teal-blue);
 	color: white;
+	border-radius: 5px;
 
 	align-items: center;
 	justify-content: center;
@@ -127,13 +147,14 @@ input[type="radio"]:checked + label {
 }
 
 #checkboxes {
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 10px 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+	gap: 10px;
 }
 
 input[type="checkbox"] + label {
-	width: 120px;
+	width: 100%;
+	height: 30px;
 
 	display: flex;
 	align-items: center;
@@ -141,6 +162,7 @@ input[type="checkbox"] + label {
 
 	background-color: var(--teal-blue);
 	color: white;
+	border-radius: 5px;
 }
 
 input[type="checkbox"]:checked + label {
@@ -156,10 +178,21 @@ input[type="checkbox"]:hover + label {
 	border-radius: 8px;
 	background-color: white;
 	border: 3px solid var(--teal-blue);
+	color: var(--dark-grey);
+
+	padding: 0 10px;
+}
+
+.full-width-input::placeholder {
+	color: var(--light-grey);
 }
 
 #comments {
 	height: 60px;
+}
+
+#comments::placeholder {
+	font-family: 'Montserrat', sans-serif;
 }
 
 #submit {
