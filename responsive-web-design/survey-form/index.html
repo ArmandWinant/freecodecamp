@@ -3,47 +3,41 @@
 	<head>
 		<title>FreeCodeCamp | Survey Form</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<main class="no-margin row-flex">
+		<main>
 			<div class="container bbox column-flex">
-				<header id="header" class="column-flex">
-					<h1 id="title" class="no-margin dark-grey-text condensed-text">the adobe<br><span class="pink-text">donut</span></h1>
-					<p id="description" class="no-margin light-grey-text round-text">Not only is the Adobe Donut <span class="pink-text">XD-Pink,</span> but it also tastes like a grid. Delicious!</p>
+				<header class="column-flex">
+					<h1 id="title" class="no-margin">the adobe<br><span>donut</span></h1>
+					<p id="description" class="no-margin">Not only is the adobe donut <span>XD-Pink,</span> but it also tastes like a grid. Delicious!</p>
 				</header>
-				<form id="survey-form" class="">
-					<fieldset id="donut" class="bbox column-flex">
-						<legend><h2 class="no-margin condensed-text legend-title dark-grey-text">build your donut</h2></legend>
+				<form id="survey-form" class="bbox">
+					<fieldset id="donut" class="column-flex bbox">
+						<legend><h2 class="no-margin">build your donut</h2></legend>
 						<div class="input-segment">
-							<h3 class="label-title round-text">pick a base:</h3>
-							<div class="input-group round-text" id="radio-inputs">
+							<h3 class="label-title">Pick a base:</h3>
+							<div id="radio-inputs" class="input-group">
 								<div class="radio-input row-flex">
-									<input id="vanilla-base" type="radio" name="base" value="vanilla" checked />
-									<label for="vanilla-base" class="row-flex">
-										<h4 class="no-margin">vanilla</h4>
-									</label>
+									<input id="vanilla-base" type="radio" name="base" value="vanilla-base" checked />
+									<label for="vanilla-base"><h4 class="no-margin">vanilla</h4></label>
 								</div>
 								<div class="radio-input row-flex">
-									<input id="chocolate-base" type="radio" name="base" value="chocolate" />
-									<label for="chocolate-base" class="row-flex">
-										<h4 class="no-margin">chocolate</h4>
-									</label>
+									<input id="chocolate-base" type="radio" name="base" value="chocolate-base" />
+									<label for="chocolate-base"><h4 class="no-margin">chocolate</h4></label>
 								</div>
 								<div class="radio-input row-flex">
-									<input id="lemon-base" type="radio" name="base" value="lemon" />
-									<label for="lemon-base" class="row-flex">
-										<h4 class="no-margin">lemon</h4>
-									</label>
+									<input id="lemon-base" type="radio" name="base" value="lemon-base" />
+									<label for="lemon-base"><h4 class="no-margin">lemon</h4></label>
 								</div>
 							</div>
 						</div>
-						<label id="dropdown-label" for="dropdown" class="column-flex">
-							<h3 class="label-title round-text">choose an icing flavor:</h3>
-							<select id="dropdown" class="bbox styled-input round-text">
+						<label for="dropdown" class="column-flex">
+							<h3 class="label-title">Choose a frosting flavor:</h3>
+							<select id="dropdown" class="formatted-input">
 								<option value="chocolate">Chocolate</option>
 								<option value="caramel">Caramel</option>
 								<option value="maple">Maple</option>
@@ -52,67 +46,55 @@
 							</select>
 						</label>
 						<div class="input-segment">
-							<h3 class="label-title round-text">add some toppings:</h3>
-							<div class="input-group round-text" id="checkbox-inputs">
-								<div class="checkbox-input">
+							<h3 class="label-title">Add some toppings:</h3>
+							<div id="checkbox-inputs" class="input-group">
+								<div class="checkbox-input row-flex">
 									<input id="sprinkles" type="checkbox" name="toppings" value="sprinkles" />
-									<label for="sprinkles" class="row-flex">
-										<h4 class="no-margin">sprinkles</h4>
-									</label>
+									<label for="sprinkles"><h4 class="no-margin">sprinkles</h4></label>
 								</div>
-								<div class="checkbox-input">
+								<div class="checkbox-input row-flex">
 									<input id="chocolate-chips" type="checkbox" name="toppings" value="chocolate-chips" />
-									<label for="chocolate-chips" class="row-flex">
-										<h4 class="no-margin">chocolate chips</h4>
-									</label>
+									<label for="chocolate-chips"><h4 class="no-margin">chocolate chips</h4></label>
 								</div>
-								<div class="checkbox-input">
+								<div class="checkbox-input row-flex">
 									<input id="walnuts" type="checkbox" name="toppings" value="walnuts" />
-									<label for="walnuts" class="row-flex">
-										<h4 class="no-margin">walnuts</h4>
-									</label>
+									<label for="walnuts"><h4 class="no-margin">walnuts</h4></label>
 								</div>
-								<div class="checkbox-input">
+								<div class="checkbox-input row-flex">
 									<input id="blueberries" type="checkbox" name="toppings" value="blueberries" />
-									<label for="blueberries" class="row-flex">
-										<h4 class="no-margin">blueberries</h4>
-									</label>
+									<label for="blueberries"><h4 class="no-margin">blueberries</h4></label>
+								</div>
+								<div class="checkbox-input row-flex">
+									<input id="oreo" type="checkbox" name="toppings" value="oreo" />
+									<label for="oreo"><h4 class="no-margin">oreo</h4></label>
 								</div>
 								<div class="checkbox-input row-flex">
 									<input id="coconut" type="checkbox" name="toppings" value="coconut" />
-									<label for="coconut" class="row-flex">
-										<h4 class="no-margin">coconut</h4>
-									</label>
-								</div>
-								<div class="checkbox-input">
-									<input id="oreo" type="checkbox" name="toppings" value="oreo" />
-									<label for="oreo" class="row-flex">
-										<h4 class="no-margin">oreo</h4>
-									</label>
+									<label for="coconut"><h4 class="no-margin">coconut</h4></label>
 								</div>
 							</div>
 						</div>
 						<label id="number-label" for="number" class="column-flex">
-							<h3 class="label-title round-text">how many donuts would you like?</h3>
-							<input id="number" class="bbox styled-input" type="number" placeholder="1" min="1" max="12" required />
+							<h3 class="label-title">how many donuts would you like?</h3>
+							<input id="number" class="formatted-input" type="number" placeholder="1" min="1" max="12" required />
 						</label>
 					</fieldset>
-					<fieldset id="contact" class="bbox column-flex">
-						<legend><h2 class="no-margin condensed-text legend-title dark-grey-text">contact info</h2></legend>
+					<fieldset id="contact" class="column-flex bbox">
+						<legend><h2 class="no-margin">contact info</h2></legend>
 						<label id="name-label" for="name" class="column-flex">
-							<h3 class="label-title round-text">your name:</h3>
-							<input id="name" class="bbox styled-input" type="text" placeholder="your name" required />
+							<h3 class="label-title">your name:</h3>
+							<input id="name" class="formatted-input" type="text" placeholder="your name" required />
 						</label>
 						<label id="email-label" for="email" class="column-flex">
-							<h3 class="label-title round-text">your email:</h3>
-							<input id="email" class="bbox styled-input" type="email" placeholder="your email" required />
+							<h3 class="label-title">your email:</h3>
+							<input id="email" class="formatted-input" type="email" placeholder="your email" required />
 						</label>
-						<label id="comments-label" for="comments" class="column-flex">
-							<h3 class="label-title round-text">comments:</h3>
-							<textarea id="comments" class="bbox styled-input" placeholder="Please let us know of any dietary allergies or restrictions we should be aware of"></textarea>
-						</lable>
+						<label for="comments" class="column-flex">
+							<h3 class="label-title">comments:</h3>
+							<textarea id="comments" class="formatted-input" placeholder="Please let us know of any dietary allergies or restrictions we should be aware of"></textarea>
+						</label>
 					</fieldset>
-					<button id="submit" class="round-text styled-input row-flex"><i class="fa-solid fa-cart-shopping"></i> <span>buy now</span></button>
+					<button id="submit" class="formatted-input row-flex"><i class="fa-solid fa-cart-shopping"></i><span>buy now</span></button>
 				</form>
 			</div>
 		</main>
