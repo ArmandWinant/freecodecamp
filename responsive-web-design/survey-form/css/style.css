@@ -190,6 +190,7 @@ input[type="checkbox"]:checked + label {
 #comments {
 	height: 80px;
 	padding: 10px 20px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 #submit {
