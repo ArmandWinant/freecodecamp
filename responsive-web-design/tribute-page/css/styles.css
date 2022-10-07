@@ -1,10 +1,10 @@
 .black-border {
-	/* box-sizing: border-box;
-	border: 1px solid black; */
+	/* border: 1px solid black;
+	box-sizing: border-box; */
 }
 
 .no-margin {
-	margin: 0 !important
+	margin: 0 !important;
 }
 
 .no-padding {
@@ -15,58 +15,70 @@
 	box-sizing: border-box;
 }
 
-#main {
-	max-width: 576px;
-	margin: 0 auto;
-	padding: 30px 0;
-
-	display: flex;
-	flex-direction: column;
-	gap: 50px;
-}
-
-#title-header {
-	padding: 0 10px;
-
-	display: flex;
-	flex-direction: column;
-
-	font-family: 'Vollkorn', serif;
-}
-
-#title {
+.row-flex {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 15px;
-
-	text-transform: capitalize;
-	font-weight: lighter;
-	font-size: 11vw;
 }
 
-#subtitle {
-	margin: 0;
-	margin-top: 15px;
-
-	font-style: italic;
-	font-weight: lighter;
-	font-size: 6vw;
-}
-
-#overline {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	text-transform: uppercase;
-}
-
-#img-div {
+.column-flex {
 	display: flex;
 	flex-direction: column;
+}
+
+body {
+	background: oldlace;
+	color: #333;
+}
+
+#main {
+	margin: 0 auto;
+	max-width: 600px;
+
+	padding: 30px 0;
+	gap: 70px;
 }
 
 #image {
 	max-width: 100%;
 	display: block;
+}
+
+#page-header {
+	padding: 0 10px;
+	gap: 20px;
+}
+
+#overline {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+#title {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+
+	font-size: 70px;
+	line-height: 50px;
+	font-weight:100;
+	text-transform: capitalize;
+}
+
+#subtitle {
+	margin: 0;
+  /* margin-top: 10px; */
+
+	font-size: 40px;
+	line-height: 25px;
+	font-weight: lighter;
+	font-style: italic;
+}
+
+#img-div {
+	margin: 0;
 }
 
 #img-caption {
@@ -77,13 +89,13 @@
 	padding: 0 10px;
 }
 
-@media (min-width: 576px) {
-	#title-header {
+@media (min-width: 600px) {
+	#page-header {
 		padding: 0;
 	}
 
 	#image {
-		border-radius: 5px;
+		border-radius: 3px;
 	}
 
 	#img-caption {
@@ -97,25 +109,25 @@
 
 @media (min-width: 768px) {
 	#main {
-		padding: 0;
-		gap: 80px;
+		padding: 0;	
+		max-width: none;
+		width: 615px;
+
+		gap: 100px;
 	}
 
-	#title-header {
+	#page-header {
 		height: 100vh;
-		padding: 0;
-
-		gap: 10px;
-		flex-wrap: nowrap;
 		justify-content: center;
+		gap: 20px;
 	}
 
 	#title {
 		flex-direction: column;
-		gap: 0;
+		gap: 30px;
 
 		font-size: 160px;
-		line-height: 150px;
+		line-height: 120px;
 	}
 
 	.title-1 {
@@ -127,60 +139,45 @@
 	}
 
 	#subtitle {
-		margin-top: 20px;
-		font-size: 70px;
-		line-height: 60px;
-	}
+		font-size: 60px;
+		line-height: 40px;
 
-	#img-caption {
-		padding: 0 5px;
-	}
-
-	#tribute-info {
-		padding: 0;
+		margin-top: 40px;
 	}
 }
 
 @media (min-width: 992px) {
 	#main {
-		max-width: 768px;
-		gap: 100px;
-	}
+		width: 720px;
 
-	#title-header {
-		gap: 30px;
+		gap: 120px;
 	}
 
 	#title {
 		font-size: 180px;
-		line-height: 170px;
+		line-height: 120px;
+
+		gap: 50px;
 	}
 
 	#subtitle {
-		margin-top: 10px;
-		font-size: 90px;
-		line-height: 80px;
-	}
-
-	#image {
-		border-radius: 8px;
+		font-size: 80px;
+		line-height: 45px;
 	}
 }
 
 @media (min-width: 1200px) {
 	#main {
-		max-width: 992px;
+		width: 960px;
 	}
 
 	#title {
 		font-size: 220px;
-		line-height: 180px;
-
-		gap: 20px;
+		line-height: 160px;
 	}
 
 	#subtitle {
 		font-size: 100px;
-		line-height: 90px;
+		line-height: 70px;
 	}
 }
