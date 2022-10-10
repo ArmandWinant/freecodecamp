@@ -1,30 +1,76 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>FreeCodeCamp | Tribute Page</title>
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body class="no-margin">
-		<main id="main" class="bbox column-flex black-border">
-			<header id="page-header" class="bbox column-flex black-border">
-				<h3 id="overline" class="no-margin black-border">the history of haiti</h3>
-				<h1 id="title" class="no-margin black-border">
-					<span class="title-1">histoire</span>
-					<span class="title-2">d'Haïti</span>
-				</h1>
-				<h2 id="subtitle" class="black-border">1492-1805</h2>
-			</header>
-			<figure id="img-div" class="column-flex black-border">
-				<img id="image" src="image.png" />
-				<figcaption id="img-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</figcaption>
-			</figure>
-			<article id="tribute-info">
-				<section>
-					<h2>Hispaniola</h2>
-					<h3>French Creole: Ispayola</h3>
-				</section>
-			</article>
-		</main>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-	</body>
+  <head>
+    <title>FreeCodeCamp | Tribute Page</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body class="no-margin">
+    <main id="main" class="black-border">
+      <header class="page-header">
+        <h3 class="page-header-overline no-margin">the history of haïti</h3>
+        <h1 id="title" class="page-header-title no-margin">
+          <span class="title-1">histoire</span>
+          <span class="title-2">d'Haïti</span>
+        </h1>
+        <h2 class="page-header-subtitle no-margin">1492-1805</h2>
+      </header>
+      <figure id="img-div" class="no-margin">
+        <img id="image" src="https://restavekfreedom.org/wp-content/uploads/2018/05/painting.jpg" />
+        <figcaption id="img-caption">As different nationalities arrived and made their mark on the island, Haiti’s culture has evolved and absorbed them.</figcaption>
+      </figure>
+      <article>
+        <section id="intro-section">
+          <header id="intro-header">
+            <h2 class="no-margin">Hispaniola</h2>
+            <h3 class="no-margin"><em>Haitian Creole</em>: Ispayola</h3>
+          </header>
+          <p class="no-margin">Hispaniola, the island shared by modern-day Haiti and the Dominican Republic,
+            is located around the Puerto Rico, Jamaica, and Cuba.
+            It is fewer than 700 miles southeast of Florida.
+            Haiti occupies the western third of the island, and home to 10 million people.
+            The country is renowned for its remarkable history and culture: Haiti was the first independent nation in the Caribbean,
+            the second democracy in the western hemisphere, and the first black republic.</p>
+        </section>
+        <nav>
+          <header>
+            <h2>major events timeline</h2>
+          </header>
+          <ul id="events" class="no-padding black-border">
+            <li><a class="event-link" href="#">
+              <span class="event-dates">1772-1799</span>
+              <span class="event-title">spanish rule</span>
+            </a></li>
+            <li><a class="event-link" href="#">
+              <span class="event-dates">1772-1799</span>
+              <span class="event-title">french rule</span>
+            </a></li>
+            <li><a class="event-link" href="#">
+              <span class="event-dates">1772-1799</span>
+              <span class="event-title">french revolution</span>
+            </a></li>
+            <li><a class="event-link" href="#">
+              <span class="event-dates">1772-1799</span>
+              <span class="event-title">slave resistance</span>
+            </a></li>
+            <li><a class="event-link" href="#">
+              <span class="event-dates">1772-1799</span>
+              <span class="event-title">upheavals</span>
+            </a></li>
+            <li><a class="event-link" href="#">
+              <span class="event-dates">1772-1799</span>
+              <span class="event-title">toussaint revolution</span>
+            </a></li>
+            <li><a class="event-link" href="#">
+              <span class="event-dates">1772-1799</span>
+              <span class="event-title">final years of revolution</span>
+            </a></li>
+            <li><a class="event-link" href="#">
+              <span class="event-dates">1772-1799</span>
+              <span class="event-title">haitian independence</span>
+            </a></li>
+          </ul>
+        </nav>
+      </article>
+    </main>
+  </body>
 </html>
