@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+.serif {
+  font-family: 'Libre Baskerville', serif;
+}
+
 #main {
   margin: 0 auto;
 }
@@ -30,16 +34,26 @@
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
 }
 
 .page-header-title {
   text-transform: capitalize;
   font-weight: lighter;
+  
+  font-size: 50px;
+  line-height: 60px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
 
 .page-header-subtitle {
   font-style: italic;
   font-weight: lighter;
+
+  margin: 0;
 }
 
 #img-div {
@@ -58,6 +72,14 @@
 
 #tribute-info {
   padding: 0 10px;
+}
+
+#intro-title {
+  font-size: 36px;
+}
+
+#intro-subtitle {
+  font-size: 24px;
 }
 
 #events {
@@ -122,8 +144,28 @@
     height: 100vh;
 
     justify-content: center;
+    gap: 10px;
 
     padding: 0;
+  }
+
+  .page-header-title {
+    font-size: 90px;
+    line-height: 90px;
+    flex-direction: column;
+  }
+
+  .title-1 {
+    align-self: flex-start;
+  }
+
+  .title-2 {
+    align-self: flex-end;
+  }
+
+  .page-header-subtitle {
+    font-size: 40px;
+    margin-top: 20px;
   }
 
   .event-dates {
@@ -151,6 +193,16 @@
 @media (min-width: 768px) {
   #main {
     width: calc(0.8 * 768px);
+  }
+
+  .page-header-title {
+    font-size: 120px;
+    line-height: 120px;
+  }
+
+  .page-header-subtitle {
+    font-size: 60px;
+    margin-top: 30px;
   }
 
   #events {
@@ -182,6 +234,16 @@
     width: calc(0.8 * 992px);
   }
 
+  .page-header-title {
+    font-size: 160px;
+    line-height: 160px;
+  }
+
+  .page-header-subtitle {
+    font-size: 90px;
+    margin-top: 50px;
+  }
+
   #events {
     gap: 100px;
   }
@@ -203,6 +265,16 @@
 @media (min-width: 1200px) {
   #main {
     width: calc(0.8 * 1200px);
+  }
+
+  .page-header-title {
+    font-size: 190px;
+    line-height: 190px;
+  }
+
+  .page-header-subtitle {
+    font-size: 90px;
+    margin-top: 30px;
   }
 
   #events {
