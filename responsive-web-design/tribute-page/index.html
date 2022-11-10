@@ -3,77 +3,115 @@
   <head>
     <title>FreeCodeCamp | Tribute Page</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Archivo+Black&family=Koh+Santepheap:wght@100;300;400&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond&display=swap" rel="stylesheet">
   </head>
-  <body class="no-margin">
-    <main id="main" class="black-border">
-      <header class="page-header serif">
-        <h3 class="page-header-overline no-margin">the history of haïti</h3>
-        <h1 id="title" class="page-header-title no-margin black-border">
-          <span class="title-1">histoire</span>
-          <span class="title-2">d'Haïti</span>
+  <body>
+    <main id="main">
+      <header class="section-header">
+        <h3 class="section-overline no-margin">the history of haiti</h3>
+        <h1 id="title" class="section-title no-margin">
+          <span class="title-left">Histoire</span>
+          <span class="title-right">D'Haïti</span>
         </h1>
-        <h2 class="page-header-subtitle">1492-1805</h2>
+        <h2 class="section-subtitle no-margin">1492-1805</h2>
       </header>
       <figure id="img-div" class="no-margin">
         <img id="image" src="https://restavekfreedom.org/wp-content/uploads/2018/05/painting.jpg" />
-        <figcaption id="img-caption">As different nationalities arrived and made their mark on the island, Haiti’s culture has evolved and absorbed them.</figcaption>
+        <figcaption id="img-caption">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
       </figure>
-      <article id="tribute-info">
-        <section id="intro-section">
-          <header id="intro-header">
-            <h2 id="intro-title" class="section-title no-margin serif">Hispaniola</h2>
-            <h3 id="intro-subtitle" class="section-subtitle no-margin serif"><em>Haitian Creole</em>: Ispayola</h3>
-          </header>
-          <p class="no-margin">Hispaniola, the island shared by modern-day Haiti and the Dominican Republic,
-            is located around the Puerto Rico, Jamaica, and Cuba.
-            It is fewer than 700 miles southeast of Florida.
-            Haiti occupies the western third of the island, and home to 10 million people.
-            The country is renowned for its remarkable history and culture: Haiti was the first independent nation in the Caribbean,
-            the second democracy in the western hemisphere, and the first black republic.</p>
-        </section>
-        <nav>
-          <header>
-            <h2 class="section-title">major events timeline</h2>
-          </header>
-          <ul id="events" class="no-padding black-border">
-            <li><a class="event-link" href="#">
-              <span class="event-dates black-border">1772-1799</span>
-              <span class="event-title">spanish rule</span>
-            </a></li>
-            <li><a class="event-link" href="#">
-              <span class="event-dates">1772-1799</span>
-              <span class="event-title">french rule</span>
-            </a></li>
-            <li><a class="event-link" href="#">
-              <span class="event-dates">1772-1799</span>
-              <span class="event-title">french revolution</span>
-            </a></li>
-            <li><a class="event-link" href="#">
-              <span class="event-dates">1772-1799</span>
-              <span class="event-title">slave resistance</span>
-            </a></li>
-            <li><a class="event-link" href="#">
-              <span class="event-dates">1772-1799</span>
-              <span class="event-title">upheavals</span>
-            </a></li>
-            <li><a class="event-link" href="#">
-              <span class="event-dates">1772-1799</span>
-              <span class="event-title">toussaint revolution</span>
-            </a></li>
-            <li><a class="event-link" href="#">
-              <span class="event-dates">1772-1799</span>
-              <span class="event-title">final years of revolution</span>
-            </a></li>
-            <li><a class="event-link" href="#">
-              <span class="event-dates">1772-1799</span>
-              <span class="event-title">haitian independence</span>
-            </a></li>
-          </ul>
-        </nav>
-      </article>
+      <section>
+        <header>
+          <h2 class="no-margin">Hispaniola</h2>
+          <h3 class="no-margin"><em>Haitian Creole:</em> Ispayola</h3>
+        </header>
+        <p class="no-margin">
+          Hispaniola, the island shared by modern-day Haiti and the Dominican Republic, is located in the Caribbean Sea between Puerto Rico, Jamaica, and Cuba.
+          It is fewer than 700 miles southeast of Florida. Haiti occupies the western third of the island and is home to nearly 10 millon people.
+          The country is renowned for its remarkable history and culture. Haiti was the first independent nation in the Caribbean, the second democracy in the western hemisphere,
+          and the first black republic in the world. 
+        </p>
+      </section>
+      <section>
+        <header>
+          <h2 class="no-margin">major events timeline</h2>
+        </header>
+        <ul id="events" class="no-padding no-margin black-border">
+          <li class="event">
+            <a class="event-link" href="#">
+              <h3 class="event-title no-margin">spanish rule</h3>
+            </a>
+            <h4 class="event-dates no-margin">1750-1784</h4>
+          </li>
+          <li class="event">
+            <a class="event-link" href="#">
+              <h3 class="event-title no-margin">french rule</h3>
+            </a>
+            <h4 class="event-dates no-margin">1750-1784</h4>
+          </li>
+          <li class="event">
+            <a class="event-link" href="#">
+              <h3 class="event-title no-margin">french revolution</h3>
+            </a>
+            <h4 class="event-dates no-margin">1750-1784</h4>
+          </li>
+          <li class="event">
+            <a class="event-link" href="#">
+              <h3 class="event-title no-margin">slave resistance</h3>
+            </a>
+            <h4 class="event-dates no-margin">1750-1784</h4>
+          </li>
+          <li class="event">
+            <a class="event-link" href="#">
+              <h3 class="event-title no-margin">upheavals</h3>
+            </a>
+            <h4 class="event-dates no-margin">1750-1784</h4>
+          </li>
+          <li class="event">
+            <a class="event-link" href="#">
+              <h3 class="event-title no-margin">toussaint louverture</h3>
+            </a>
+            <h4 class="event-dates no-margin">1750-1784</h4>
+          </li>
+          <li class="event">
+            <a class="event-link" href="#">
+              <h3 class="event-title no-margin">final years of revolution</h3>
+            </a>
+            <h4 class="event-dates no-margin">1750-1784</h4>
+          </li>
+          <li class="event">
+            <a class="event-link" href="#">
+              <h3 class="event-title no-margin">haitian independence</h3>
+            </a>
+            <h4 class="event-dates no-margin">1750-1784</h4>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <header>
+          <h3 class="no-margin">the cost of freedom</h3>
+          <h1 class="no-margin">two hundred thousand</h1>
+          <h2 class="no-margin">216,000 dead haitian soldiers</h2>
+        </header>
+        <figure class="no-margin">
+          <blockquote class="no-margin black-border">
+            "Never again shall a Colonial or a European set his foot upon this territory with the title of master or proptietor.
+            This resolution shall henceforward form the fundamental basis of our constitution."
+          </blockquote>
+          <figcaption>Jean-Jacques Dessalines, "Liberty or Death: Proclamation."</figcaption>
+        </figure>
+      </section>
+      <header class="section-header">
+        <h3 class="section-overline no-margin">tensions in the colony</h3>
+        <h1 class="section-title no-margin">
+          <span class="title-left">French</span>
+          <span class="title-right">Rule</span>
+        </h1>
+        <h2 class="section-subtitle no-margin">1750-1784</h2>
+      </header>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
