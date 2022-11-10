@@ -1,5 +1,5 @@
 .black-border {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
 }
 
@@ -31,6 +31,7 @@ body {
 #main {
   margin: 0 auto;
   max-width: 600px;
+  padding: 0 36px;
 }
 
 /* SECTION HEADER */
@@ -41,6 +42,7 @@ body {
 .section-overline {
   text-transform: uppercase;
   font-family: 'Archivo Black', sans-serif;
+  font-size: 12px;
 }
 
 .section-title {
@@ -48,6 +50,8 @@ body {
   flex-direction: column;
 
   font-weight: lighter;
+  font-size: 100px;
+  line-height: 90px;
 }
 
 .title-left {
@@ -61,6 +65,7 @@ body {
 .section-subtitle {
   font-weight: lighter;
   font-style: italic;
+  font-size: 49px;
 }
 
 /* IMAGE */
