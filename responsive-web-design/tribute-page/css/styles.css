@@ -19,6 +19,8 @@
   --beige: #FDF9EF;
   --dark-grey: #333;
   --light-grey: #A8A4A1;
+  --serif: 'EB Garamond', serif;
+  --sans-serif: 'Archivo Black', sans-serif;
 }
 
 body {
@@ -80,11 +82,39 @@ body {
   display: block;
 }
 
+/* INTRO SECTION */
+#intro-header {
+  font-family: var(--serif);
+}
+
+#intro-header h1 {
+  font-size: 60px;
+}
+
+#intro-header h2 {
+  font-size: 24px;
+}
+
+#intro p {
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0 20px 0 0;
+}
+
 /* EVENTS TIMELINE */
+#timeline-header h1 {
+  font-family: var(--serif);
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
 #events {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 35px;
   
   list-style: none;
 }
@@ -95,11 +125,14 @@ body {
 }
 
 .event-link:link {
+  font-family: var(--serif);
+  font-size: 32px;
+  text-transform: capitalize;
   text-decoration: none;
   color: var(--light-grey)
 }
 
-.event-link:hover {
+.event-link:hover h3 {
   color: var(--dark-grey);
 }
 
@@ -113,12 +146,56 @@ body {
 }
 
 .event-dates {
+  display: none;
   visibility: hidden;
   font-weight: lighter;
 }
 
 .event-link:hover + .event-dates {
   visibility: visible;
+}
+
+/* QUOATE HEADER */
+#quote-header {
+  display: flex;
+  flex-direction: column;
+}
+
+#quote-header h1 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: var(--serif);
+  font-size: 65px;
+  line-height: 50px;
+}
+
+#quote-header h3 {
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 12px;
+  font-family: var(--sans-serif);
+}
+
+#quote-header h2 {
+  align-self: flex-end;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 12px;
+  font-family: var(--sans-serif);
+}
+
+#quote {
+  font-family: var(--serif);
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0 20px 0 0;
+}
+
+#quote-caption {
+  font-family: var(--sans-serif);
+  font-size: 10px;
+  font-weight: lighter;
 }
 
 @media (min-width: 768px) {}
