@@ -20,7 +20,7 @@
   --dark-grey: #333;
   --light-grey: #A8A4A1;
   --serif: 'EB Garamond', serif;
-  --sans-serif: 'Archivo Black', sans-serif;
+  --sans-serif: 'Montserrat', sans-serif;
 }
 
 
@@ -33,6 +33,10 @@ body {
 #main {
   margin: 0 auto;
   padding: 90px 36px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 /* HEADER SECTION */
@@ -47,6 +51,7 @@ body {
   font-family: var(--sans-serif);
   text-transform: uppercase;
   font-size: 2.5vw;
+  font-weight: 900;
 }
 
 .section-title {
@@ -96,10 +101,34 @@ body {
 /* INTRO SECTION */
 #intro {
   font-family: var(--serif);
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#intro-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#intro h1 {
+  font-size: 14vw;
+  font-weight: lighter;
+}
+
+#intro h2 {
+  font-size: 6vw;
+  font-weight: lighter;
 }
 
 #intro p {
   width: 90%;
+  font-size: 3.5vw;
+  line-height: 7vw;
+  font-family: var(--sans-serif);
+  font-weight: 300;
 }
 
 /* TIMELINE */
