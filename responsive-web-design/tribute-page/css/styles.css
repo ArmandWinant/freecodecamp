@@ -1,5 +1,5 @@
 .black-border {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
 }
 
@@ -162,7 +162,8 @@ ul {
 .event-name {
   text-transform: capitalize;
   text-decoration: none;
-  font-size: 7.5vw;
+  font-size: 8.5vw;
+  font-family: var(--serif);
 }
 
 .event-name:link {
@@ -184,6 +185,61 @@ ul {
 .event-name:hover + .event-dates {
   display: block;
 }
+
+/* QUOTE SECTION */
+#quote {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#quote-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#quote-header h3 {
+  font-family: var(--sans-serif);
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#quote-header h1 {
+  font-family: var(--serif);
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 14vw;
+  line-height: 1;
+}
+
+#quote-header h2 {
+  align-self: flex-end;
+  font-family: var(--sans-serif);
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#quote-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#quote-text {
+  font-family: var(--serif);
+  font-size: 7.5vw;
+  font-weight: lighter;
+}
+
+#quote-caption {
+  font-family: var(--sans-serif);
+  font-weight: 700;
+  font-size: 3vw;
+}
+
 
 @media (min-width: 576px) {
   #main {
