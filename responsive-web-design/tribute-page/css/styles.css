@@ -328,6 +328,23 @@ ul {
     font-size: 70px;
     line-height: 52px;
   }
+
+  /* TIMELINE NAVIGATION */
+  #nav {
+    gap: 80px;
+  }
+
+  #nav-header h1 {
+    font-size: 84px;
+  }
+
+  ul {
+    gap: 60px;
+  }
+
+  .event-name {
+    font-size: 52px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -375,6 +392,27 @@ ul {
   #intro p {
     font-size: 20px;
   }
+
+  /* TIMELINE NAVIGATION */
+  #nav {
+    gap: 80px;
+  }
+
+  #nav-header h1 {
+    font-size: 106px;
+  }
+
+  ul {
+    gap: 80px;
+  }
+
+  .event-name {
+    font-size: 68px;
+  }
+
+  .event-dates {
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -409,5 +447,26 @@ ul {
 
   #intro h2 {
     font-size: 32px;
+  }
+
+  /* TIMELINE NAVIGATION */
+  #nav {
+    gap: 80px;
+  }
+
+  #nav-header h1 {
+    font-size: 120px;
+  }
+
+  ul {
+    gap: 100px;
+  }
+
+  .event-name {
+    font-size: 86px;
+  }
+
+  .event-dates {
+    font-size: 28px;
   }
 }
