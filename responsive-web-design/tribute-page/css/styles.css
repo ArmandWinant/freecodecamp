@@ -110,11 +110,11 @@ body {
 #intro-header {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 #intro h1 {
-  font-size: 14vw;
+  font-size: 16vw;
   font-weight: lighter;
 }
 
@@ -128,7 +128,7 @@ body {
   font-size: 3.5vw;
   line-height: 7vw;
   font-family: var(--sans-serif);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* TIMELINE NAVIGATION */
@@ -243,7 +243,7 @@ ul {
 
 @media (min-width: 576px) {
   #main {
-    padding: 0;
+    padding: 90px 0;
     max-width: 464px;
   }
   
@@ -261,6 +261,30 @@ ul {
   .section-subtitle {
     font-size: 60px;
     line-height: 45px;
+  }
+
+  /* INTRO SECTION */
+  #intro {
+    gap: 50px;
+  }
+
+  #intro-header {
+    gap: 20px;
+  }
+
+  #intro h1 {
+    /* font-size: 14vw; */
+    font-size: 80px;
+  }
+
+  #intro h2 {
+    font-size: 28px;
+  }
+
+  #intro p {
+    width: 90%;
+    font-size: 18px;
+    line-height: 40px;
   }
 }
 
@@ -310,6 +334,27 @@ ul {
     font-size: 85px;
     line-height: 65px;
   }
+
+  /* INTRO SECTION */
+  #intro {
+    gap: 50px;
+  }
+
+  #intro-header {
+    gap: 30px;
+  }
+
+  #intro h1 {
+    font-size: 100px;
+  }
+
+  #intro h2 {
+    font-size: 32px;
+  }
+
+  #intro p {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -317,9 +362,7 @@ ul {
     max-width: 966px;
   }
   
-  /* HEADER SECTION */
-  .section-header {}
-  
+  /* HEADER SECTION */  
   .section-overline {
     font-size: 18px;
     line-height: 14px;
@@ -334,11 +377,17 @@ ul {
     font-size: 100px;
     line-height: 75px;
   }
-}
 
-/* @media (min-width: 1440px) {
-  #main {
-    max-width: 1160px;
-    background: red;
+  /* INTRO SECTION */
+  #intro {
+    gap: 50px;
   }
-} */
+
+  #intro h1 {
+    font-size: 120px;
+  }
+
+  #intro h2 {
+    font-size: 32px;
+  }
+}
