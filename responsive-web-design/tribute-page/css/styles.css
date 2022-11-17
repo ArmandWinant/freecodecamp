@@ -44,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .section-overline {
@@ -193,7 +193,7 @@ ul {
 #quote-header {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 #quote-header h3 {
@@ -234,7 +234,7 @@ ul {
 #quote-caption {
   font-family: var(--sans-serif);
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 
@@ -242,6 +242,7 @@ ul {
   #main {
     padding: 90px 0;
     max-width: 464px;
+    gap: 120px;
   }
   
   /* HEADER SECTION */
@@ -262,15 +263,14 @@ ul {
 
   /* INTRO SECTION */
   #intro {
-    gap: 50px;
+    gap: 80px;
   }
 
   #intro-header {
-    gap: 20px;
+    gap: 30px;
   }
 
   #intro h1 {
-    /* font-size: 14vw; */
     font-size: 80px;
   }
 
@@ -286,7 +286,7 @@ ul {
 
   /* TIMELINE NAVIGATION */
   #nav {
-    gap: 50px;
+    gap: 80px;
   }
 
   #nav-header h1 {
@@ -306,11 +306,43 @@ ul {
     bottom: 10px;
     font-size: 18px;
   }
+
+  /* QUOTE SECTION */
+  #quote {
+    gap: 80px;
+  }
+
+  #quote-header h3 {
+    font-size: 14px;
+  }
+
+  #quote-header h1 {
+    font-size: 80px;
+    line-height: 1;
+  }
+
+  #quote-header h2 {
+    font-size: 14px;
+  }
+
+  #quote-container {
+    gap: 20px;
+  }
+
+  #quote-text {
+    width: 90%;
+    font-size: 42px;
+  }
+
+  #quote-caption {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 768px) {
   #main {
     max-width: 620px;
+    gap: 140px;
   }
   
   /* HEADER SECTION */
@@ -345,21 +377,48 @@ ul {
   .event-name {
     font-size: 52px;
   }
+
+  /* QUOTE SECTION */
+  #quote {
+    gap: 80px;
+  }
+
+  #quote-header h3 {
+    font-size: 14px;
+  }
+
+  #quote-header h1 {
+    font-size: 110px;
+    line-height: 1;
+  }
+
+  #quote-header h2 {
+    font-size: 14px;
+  }
+
+  #quote-container {
+    gap: 20px;
+  }
+
+  #quote-text {
+    font-size: 48px;
+  }
+
+  #quote-caption {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 992px) {
   #main {
     max-width: 800px;
+    padding: 0;
+    gap: 160px;
   }
   
   /* HEADER SECTION */
   .section-header {
     height: 100vh;
-  }
-  
-  .section-overline {
-/*     font-size: 18px;
-    line-height: 10px; */
   }
   
   .section-title {
@@ -374,7 +433,7 @@ ul {
 
   /* INTRO SECTION */
   #intro {
-    gap: 80px;
+    gap: 100px;
   }
 
   #intro-header {
@@ -395,7 +454,7 @@ ul {
 
   /* TIMELINE NAVIGATION */
   #nav {
-    gap: 80px;
+    gap: 100px;
   }
 
   #nav-header h1 {
@@ -413,11 +472,42 @@ ul {
   .event-dates {
     font-size: 22px;
   }
+
+  /* QUOTE SECTION */
+  #quote {
+    gap: 100px;
+  }
+
+  #quote-header h3 {
+    font-size: 16px;
+  }
+
+  #quote-header h1 {
+    font-size: 140px;
+    line-height: 1;
+  }
+
+  #quote-header h2 {
+    font-size: 16px;
+  }
+
+  #quote-container {
+    gap: 20px;
+  }
+
+  #quote-text {
+    font-size: 60px;
+  }
+
+  #quote-caption {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1200px) {
   #main {
     max-width: 966px;
+    gap: 180px;
   }
   
   /* HEADER SECTION */  
@@ -427,8 +517,8 @@ ul {
   }
   
   .section-title {
-    font-size: 280px;
-    line-height: 210px;
+    font-size: 260px;
+    line-height: 200px;
   }
   
   .section-subtitle {
@@ -438,7 +528,7 @@ ul {
 
   /* INTRO SECTION */
   #intro {
-    /* gap: 50px; */
+    gap: 120px;
   }
 
   #intro h1 {
@@ -451,7 +541,7 @@ ul {
 
   /* TIMELINE NAVIGATION */
   #nav {
-    gap: 80px;
+    gap: 120px;
   }
 
   #nav-header h1 {
@@ -468,5 +558,35 @@ ul {
 
   .event-dates {
     font-size: 28px;
+  }
+
+  /* QUOTE SECTION */
+  #quote {
+    gap: 120px;
+  }
+
+  #quote-header h3 {
+    font-size: 16px;
+  }
+
+  #quote-header h1 {
+    font-size: 170px;
+    line-height: 1;
+  }
+
+  #quote-header h2 {
+    font-size: 16px;
+  }
+
+  #quote-container {
+    gap: 20px;
+  }
+
+  #quote-text {
+    font-size: 72px;
+  }
+
+  #quote-caption {
+    font-size: 16px;
   }
 }
