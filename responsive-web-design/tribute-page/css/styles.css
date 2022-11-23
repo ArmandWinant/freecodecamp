@@ -97,6 +97,7 @@ body {
 #img-caption {
   margin-top: 5px;
   font-family: var(--serif);
+  font-size: 3.5vw;
 }
 
 /* INTRO SECTION */
@@ -260,6 +261,11 @@ ul {
   .section-subtitle {
     font-size: 60px;
     line-height: 45px;
+  }
+
+  /* IMAGE */
+  #img-caption {
+    font-size: 18px;
   }
 
   /* INTRO SECTION */
@@ -430,6 +436,11 @@ ul {
   .section-subtitle {
     font-size: 85px;
     line-height: 65px;
+  }
+
+  /* IMAGE */
+  #img-caption {
+    font-size: 20px;
   }
 
   /* INTRO SECTION */
