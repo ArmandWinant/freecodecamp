@@ -95,6 +95,7 @@ body {
 }
 
 #img-caption {
+  margin-top: 5px;
   font-family: var(--serif);
 }
 
