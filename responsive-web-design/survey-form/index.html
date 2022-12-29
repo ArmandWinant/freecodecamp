@@ -1,103 +1,93 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>FreeCodeCamp | Survey Form</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
-	</head>
-	<body>
-		<main>
-			<div class="container bbox column-flex">
-				<header class="column-flex">
-					<h1 id="title" class="no-margin">the adobe<br><span>donut</span></h1>
-					<p id="description" class="no-margin">Not only is the adobe donut <span>XD-Pink,</span> but it also tastes like a grid. Delicious!</p>
-				</header>
-				<form id="survey-form" class="bbox">
-					<fieldset id="donut" class="column-flex bbox">
-						<legend><h2 class="no-margin">build your donut</h2></legend>
-						<div class="input-segment">
-							<h3 class="label-title">Pick a base:</h3>
-							<div id="radio-inputs" class="input-group">
-								<div class="radio-input row-flex">
-									<input id="vanilla-base" type="radio" name="base" value="vanilla-base" checked />
-									<label for="vanilla-base"><h4 class="no-margin">vanilla</h4></label>
-								</div>
-								<div class="radio-input row-flex">
-									<input id="chocolate-base" type="radio" name="base" value="chocolate-base" />
-									<label for="chocolate-base"><h4 class="no-margin">chocolate</h4></label>
-								</div>
-								<div class="radio-input row-flex">
-									<input id="lemon-base" type="radio" name="base" value="lemon-base" />
-									<label for="lemon-base"><h4 class="no-margin">lemon</h4></label>
-								</div>
-							</div>
-						</div>
-						<label for="dropdown" class="column-flex">
-							<h3 class="label-title">Choose a frosting flavor:</h3>
-							<select id="dropdown" class="formatted-input">
-								<option value="chocolate">Chocolate</option>
-								<option value="caramel">Caramel</option>
-								<option value="maple">Maple</option>
-								<option value="lemon">Lemon</option>
-								<option value="lime">Lime</option>
-							</select>
-						</label>
-						<div class="input-segment">
-							<h3 class="label-title">Add some toppings:</h3>
-							<div id="checkbox-inputs" class="input-group">
-								<div class="checkbox-input row-flex">
-									<input id="sprinkles" type="checkbox" name="toppings" value="sprinkles" />
-									<label for="sprinkles"><h4 class="no-margin">sprinkles</h4></label>
-								</div>
-								<div class="checkbox-input row-flex">
-									<input id="chocolate-chips" type="checkbox" name="toppings" value="chocolate-chips" />
-									<label for="chocolate-chips"><h4 class="no-margin">chocolate chips</h4></label>
-								</div>
-								<div class="checkbox-input row-flex">
-									<input id="walnuts" type="checkbox" name="toppings" value="walnuts" />
-									<label for="walnuts"><h4 class="no-margin">walnuts</h4></label>
-								</div>
-								<div class="checkbox-input row-flex">
-									<input id="blueberries" type="checkbox" name="toppings" value="blueberries" />
-									<label for="blueberries"><h4 class="no-margin">blueberries</h4></label>
-								</div>
-								<div class="checkbox-input row-flex">
-									<input id="oreo" type="checkbox" name="toppings" value="oreo" />
-									<label for="oreo"><h4 class="no-margin">oreo</h4></label>
-								</div>
-								<div class="checkbox-input row-flex">
-									<input id="coconut" type="checkbox" name="toppings" value="coconut" />
-									<label for="coconut"><h4 class="no-margin">coconut</h4></label>
-								</div>
-							</div>
-						</div>
-						<label id="number-label" for="number" class="column-flex">
-							<h3 class="label-title">how many donuts would you like?</h3>
-							<input id="number" class="formatted-input" type="number" placeholder="1" min="1" max="12" required />
-						</label>
-					</fieldset>
-					<fieldset id="contact" class="column-flex bbox">
-						<legend><h2 class="no-margin">contact info</h2></legend>
-						<label id="name-label" for="name" class="column-flex">
-							<h3 class="label-title">your name:</h3>
-							<input id="name" class="formatted-input" type="text" placeholder="your name" required />
-						</label>
-						<label id="email-label" for="email" class="column-flex">
-							<h3 class="label-title">your email:</h3>
-							<input id="email" class="formatted-input" type="email" placeholder="your email" required />
-						</label>
-						<label for="comments" class="column-flex">
-							<h3 class="label-title">comments:</h3>
-							<textarea id="comments" class="formatted-input" placeholder="Please let us know of any dietary allergies or restrictions we should be aware of"></textarea>
-						</label>
-					</fieldset>
-					<button id="submit" class="formatted-input row-flex"><i class="fa-solid fa-cart-shopping"></i><span>buy now</span></button>
-				</form>
-			</div>
-		</main>
-		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-	</body>
+  <head>
+    <title>FreeCodeCamp | Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <main class="bbox black-border">
+        <header class="black-border">
+          <hr class="no-margin no-padding">
+          <h1 id="title" class="no-margin">the adobe<span>donut</span></h1>
+          <p id="description">
+            Not only is the Adobe Donut XD-Pink, but it is also tastes like a repeat grid. Delicious!
+          </p>
+        </header>
+        <form id="survey-form">
+          <fieldset class="no-padding">
+            <legend>
+              <h2 class="no-margin">build your donut</h2>
+            </legend>
+            <div>
+              <h3 class="no-margin">pick a base</h3>
+              
+              <div class="input-group">
+                <input id="vanilla-base" type="radio" name="base" value="vanilla" checked>
+                <label for="vanilla-base" class="black-border">vanilla</label>
+                
+                <input id="chocolate-base" type="radio" name="base" value="chocolate">
+                <label for="chocolate-base" class="black-border">chocolate</label>
+
+                <input id="red-velvet-base" type="radio" name="base" value="red-velvet">
+                <label for="red-velvet-base" class="black-border">red velvet</label>
+              </div>
+            </div>
+            <label for="dropdown">
+              <h3 class="no-margin">select a frosting flavour</h3>
+              <select id="dropdown">
+                <option value="vanilla">vanilla</option>
+                <option value="chocolate">chocolate</option>
+                <option value="lemon">lemon</option>
+                <option value="strawberry">strawberry</option>
+                <option value="caramel">caramel</option>
+              </select>
+            </label>
+            <div>
+              <h3 class="no-margin">add up to 3 toppings</h3>
+
+              <input id="chocolate-chips" type="checkbox" name="toppings" value="chocolate-chips">
+              <label for="chocolate-chips">chocolate chips</label>
+
+              <input id="walnuts" type="checkbox" name="toppings" value="walnuts">
+              <label for="walnuts">walnuts</label>
+
+              <input id="blueberries" type="checkbox" name="toppings" value="blueberries">
+              <label for="blueberries">blueberries</label>
+
+              <input id="coconut" type="checkbox" name="toppings" value="coconut">
+              <label for="coconut">coconut</label>
+
+              <input id="oreo" type="checkbox" name="toppings" value="oreo">
+              <label for="oreo">oreo</label>
+            </div>
+            <label id="number-label">
+              <h3 class="no-margin">how many donuts would you like?</h3>
+              <input id="number" class="full-width-input" type="number" min="1" max="12" placeholder="6" required>
+            </label>
+          </fieldset>
+          <fieldset class="no-padding">
+            <legend>
+              <h2 class="no-margin">contact info</h2>
+            </legend>
+            <label id="name-label">
+              <h3 class="no-margin">your name</h3>
+              <input id="name" class="full-width-input" type="text" placeholder="your name" required>
+            </label>
+            <label id="email-label">
+              <h3 class="no-margin">your email</h3>
+              <input id="email" class="full-width-input" type="email" placeholder="your email" required>
+            </label>
+            <label id="comments-label">
+              <textarea id="comments" class="full-width-input"></textarea>
+            </label>
+          </fieldset>
+          <input id="submit" class="full-width-input" type="submit" value="submit">
+        </form>
+      </main>
+    </div>
+  </body>
 </html>
