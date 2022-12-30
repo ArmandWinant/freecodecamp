@@ -11,15 +11,17 @@
     <div class="container">
       <main class="bbox black-border">
         <header class="black-border">
-          <hr class="no-margin no-padding">
-          <h1 id="title" class="no-margin">the adobe<span>donut</span></h1>
-          <p id="description">
+          <div>
+            <hr class="no-margin no-padding">
+            <h1 id="title" class="no-margin">the adobe<span>donut</span></h1>
+          </div>
+          <p id="description" class="no-margin black-border">
             Not only is the Adobe Donut <span>XD-Pink,</span> but it is also tastes like a repeat grid. Delicious!
           </p>
         </header>
         <form id="survey-form">
-          <fieldset id="donut" class="no-padding">
-            <legend>
+          <fieldset id="donut" class="no-padding no-margin black-border">
+            <legend class="no-padding">
               <h2 class="no-margin">build your donut</h2>
             </legend>
             <div>
@@ -27,13 +29,13 @@
               
               <div class="input-group">
                 <input id="vanilla-base" type="radio" name="base" value="vanilla" checked>
-                <label for="vanilla-base" class="black-border">vanilla</label>
+                <label for="vanilla-base">vanilla</label>
                 
                 <input id="chocolate-base" type="radio" name="base" value="chocolate">
-                <label for="chocolate-base" class="black-border">chocolate</label>
+                <label for="chocolate-base">chocolate</label>
 
                 <input id="red-velvet-base" type="radio" name="base" value="red-velvet">
-                <label for="red-velvet-base" class="black-border">red velvet</label>
+                <label for="red-velvet-base">red velvet</label>
               </div>
             </div>
             <label for="dropdown">
@@ -51,7 +53,7 @@
 
               <div class="input-group">
                 <input id="chocolate-chips" type="checkbox" name="toppings" value="chocolate-chips">
-                <label for="chocolate-chips">chocolate chips</label>
+                <label for="chocolate-chips">maple syrup</label>
 
                 <input id="walnuts" type="checkbox" name="toppings" value="walnuts">
                 <label for="walnuts">walnuts</label>
@@ -71,8 +73,8 @@
               <input id="number" class="full-width-input" type="number" min="1" max="12" placeholder="6" required>
             </label>
           </fieldset>
-          <fieldset id="contact" class="no-padding">
-            <legend>
+          <fieldset id="contact" class="no-padding black-border">
+            <legend class="no-padding">
               <h2 class="no-margin">contact info</h2>
             </legend>
             <label id="name-label">
@@ -84,10 +86,11 @@
               <input id="email" class="full-width-input" type="email" placeholder="your email" required>
             </label>
             <label id="comments-label">
+              <h3 class="no-margin">comments</h3>
               <textarea id="comments" class="full-width-input" placeholder="Please let us know of any dietary allergies or restrictions we should be aware of"></textarea>
             </label>
           </fieldset>
-          <input id="submit" class="full-width-input" type="submit" value="submit">
+          <input id="submit" class="full-width-input" type="submit" value="buy now">
         </form>
       </main>
     </div>

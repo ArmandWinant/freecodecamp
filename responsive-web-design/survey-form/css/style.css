@@ -1,5 +1,5 @@
 .black-border {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@
   --teal-blue: #A0DEDE;
   --bright-pink: #F84BAF;
   --dark-grey: #2E2E2E;
-  --light-grey: #b4b4b4;
+  --light-grey: #B4B4B4;
 
   --narrow-font: 'Dosis', sans-serif;
   --round-font: 'Outfit', sans-serif;
@@ -44,6 +44,10 @@ main {
   width: 440px;
   background-color: rgba(255, 255, 255, .7);
   padding: 60px 45px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 header {
@@ -81,6 +85,7 @@ hr {
   font-size: 25px;
   line-height: 30px;
   font-weight: 300;
+  vertical-align: top;
 }
 
 #description span {
@@ -96,13 +101,20 @@ hr {
     "contact"
     "submit";
   font-family: var(--round-font);
+  gap: 50px;
+
   font-weight: 300;
 }
 
 fieldset {
-  border: 2px solid var(--teal-blue);
+  border: none;
+  /* border: 2px solid var(--teal-blue);
   border-radius: 16px;
-  box-sizing: border-box;
+  box-sizing: border-box; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 legend {
@@ -123,7 +135,7 @@ h3 {
 
 .input-group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-auto-rows: 30px;
   gap: 10px;
 }
@@ -145,6 +157,7 @@ input[type="checkbox"] + label {
   border-radius: 4px;
 
   font-size: 16px;
+  padding: 0 5px;
 }
 
 input[type="radio"]:hover + label,
@@ -181,7 +194,8 @@ input[type="checkbox"]:checked + label {
 }
 
 #comments {
-  height: 60px;
+  height: 80px;
+  padding: 5px 10px;
 }
 
 #submit {
@@ -192,19 +206,30 @@ input[type="checkbox"]:checked + label {
   background-color: var(--bright-pink);
   color: white;
   cursor: pointer;
+
+  font-family: var(--round-font);
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
   main {
-    width: auto;
+    width: 90vw;
+    max-width: 900px;
+  }
+
+  header {
+    max-width: 85%;
+    flex-direction: row;
+    gap: 60px;
   }
 
   #survey-form {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "donut contact"
       "donut submit"
     ;
+    gap: 30px;
   }
 }
