@@ -79,9 +79,11 @@ hr {
 #survey-form {
   color: var(--dark-grey);
   
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: grid;
+  grid-template-areas:
+    "donut"
+    "contact"
+    "submit";
 }
 
 fieldset {
@@ -90,26 +92,45 @@ fieldset {
   box-sizing: border-box;
 }
 
-.input-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+#donut {
+  grid-area: donut;
 }
 
-input[type="radio"] {
+#contact {
+  grid-area: contact;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-auto-rows: 30px;
+  gap: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
   display: none;
 }
 
-input[type="radio"] + label {
+input[type="radio"] + label,
+input[type="checkbox"] + label {
   background: var(--teal-blue);
 
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  border-radius: 4px;
 }
 
-input[type="radio"]:hover + label {
+input[type="radio"]:hover + label,
+input[type="checkbox"]:hover + label {
   cursor: pointer;
 }
 
-input[type="radio"]:checked + label {
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
   background: var(--bright-pink);
 }
 
@@ -131,7 +152,24 @@ input[type="radio"]:checked + label {
 }
 
 #submit {
+  grid-area: submit;
   border: none;
   background-color: var(--bright-pink);
   color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  main {
+    width: auto;
+  }
+
+  #survey-form {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "donut contact"
+      "donut submit"
+    ;
+  }
 }

@@ -18,7 +18,7 @@
           </p>
         </header>
         <form id="survey-form">
-          <fieldset class="no-padding">
+          <fieldset id="donut" class="no-padding">
             <legend>
               <h2 class="no-margin">build your donut</h2>
             </legend>
@@ -38,7 +38,7 @@
             </div>
             <label for="dropdown">
               <h3 class="no-margin">select a frosting flavour</h3>
-              <select id="dropdown">
+              <select id="dropdown" class="full-width-input">
                 <option value="vanilla">vanilla</option>
                 <option value="chocolate">chocolate</option>
                 <option value="lemon">lemon</option>
@@ -49,27 +49,29 @@
             <div>
               <h3 class="no-margin">add up to 3 toppings</h3>
 
-              <input id="chocolate-chips" type="checkbox" name="toppings" value="chocolate-chips">
-              <label for="chocolate-chips">chocolate chips</label>
+              <div class="input-group">
+                <input id="chocolate-chips" type="checkbox" name="toppings" value="chocolate-chips">
+                <label for="chocolate-chips">chocolate chips</label>
 
-              <input id="walnuts" type="checkbox" name="toppings" value="walnuts">
-              <label for="walnuts">walnuts</label>
+                <input id="walnuts" type="checkbox" name="toppings" value="walnuts">
+                <label for="walnuts">walnuts</label>
 
-              <input id="blueberries" type="checkbox" name="toppings" value="blueberries">
-              <label for="blueberries">blueberries</label>
+                <input id="blueberries" type="checkbox" name="toppings" value="blueberries">
+                <label for="blueberries">blueberries</label>
 
-              <input id="coconut" type="checkbox" name="toppings" value="coconut">
-              <label for="coconut">coconut</label>
+                <input id="coconut" type="checkbox" name="toppings" value="coconut">
+                <label for="coconut">coconut</label>
 
-              <input id="oreo" type="checkbox" name="toppings" value="oreo">
-              <label for="oreo">oreo</label>
+                <input id="oreo" type="checkbox" name="toppings" value="oreo">
+                <label for="oreo">oreo</label>
+              </div>
             </div>
             <label id="number-label">
               <h3 class="no-margin">how many donuts would you like?</h3>
               <input id="number" class="full-width-input" type="number" min="1" max="12" placeholder="6" required>
             </label>
           </fieldset>
-          <fieldset class="no-padding">
+          <fieldset id="contact" class="no-padding">
             <legend>
               <h2 class="no-margin">contact info</h2>
             </legend>
