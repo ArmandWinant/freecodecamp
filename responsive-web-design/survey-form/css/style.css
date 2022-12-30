@@ -210,6 +210,11 @@ input[type="checkbox"]:checked + label {
   font-family: var(--round-font);
   font-weight: 600;
   text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {
