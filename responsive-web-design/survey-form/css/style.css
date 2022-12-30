@@ -106,8 +106,11 @@ hr {
 }
 
 fieldset {
-  border: none;
+  border: 1px solid var(--teal-blue);
+  border-radius: 16px;
+
   margin: 30px 0 0 0;
+  padding: 20px 15px;
 
   display: flex;
   flex-direction: column;
@@ -116,6 +119,7 @@ fieldset {
 
 legend {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 #donut {
@@ -128,11 +132,13 @@ legend {
 
 h3 {
   text-transform: capitalize;
+
+  margin: 0 0 5px 0;
 }
 
 .input-group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-auto-rows: 30px;
   gap: 10px;
 }
