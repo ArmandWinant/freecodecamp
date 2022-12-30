@@ -1,5 +1,5 @@
 .black-border {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
 }
 
@@ -215,7 +215,7 @@ input[type="checkbox"]:checked + label {
 @media (min-width: 768px) {
   main {
     width: 90vw;
-    max-width: 900px;
+    max-width: 880px;
   }
 
   header {
