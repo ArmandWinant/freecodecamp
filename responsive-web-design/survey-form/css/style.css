@@ -1,5 +1,5 @@
 .black-border {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
 }
 
@@ -20,6 +20,9 @@
   --bright-pink: #F84BAF;
   --dark-grey: #2E2E2E;
   --light-grey: #b4b4b4;
+
+  --narrow-font: 'Dosis', sans-serif;
+  --round-font: 'Outfit', sans-serif;
 }
 
 body {
@@ -60,8 +63,7 @@ hr {
   color: var(--bright-pink);
   font-size: 38px;
   line-height: 48px;
-  /* font-family: 'Oswald', sans-serif; */
-  font-family: 'Dosis', sans-serif;
+  font-family: var(--narrow-font);
   text-transform: uppercase;
 }
 
@@ -75,8 +77,7 @@ hr {
 #description {
   margin: 10px 0 0 0;
   color: var(--light-grey);
-  /* font-family: 'Poppins', sans-serif; */
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--round-font);
   font-size: 25px;
   line-height: 30px;
   font-weight: 300;
@@ -94,8 +95,8 @@ hr {
     "donut"
     "contact"
     "submit";
-  
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--round-font);
+  font-weight: 300;
 }
 
 fieldset {
@@ -122,7 +123,7 @@ h3 {
 
 .input-group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   grid-auto-rows: 30px;
   gap: 10px;
 }
@@ -143,7 +144,7 @@ input[type="checkbox"] + label {
   color: white;
   border-radius: 4px;
 
-  font-size: 12px;
+  font-size: 16px;
 }
 
 input[type="radio"]:hover + label,
@@ -161,12 +162,22 @@ input[type="checkbox"]:checked + label {
   box-sizing: border-box;
   border: 3px solid var(--teal-blue);
   border-radius: 8px;
-  height: 36px;
+  height: 40px;
   outline: none;
+  padding: 0 10px;
 }
 
 .full-width-input:focus {
   border: 3px solid var(--bright-pink);
+  color: var(--dark-grey);
+  font-size: 16px;
+}
+
+.full-width-input::placeholder {
+  color: var(--light-grey);
+  font-family: var(--round-font);
+  font-weight: 300;
+  font-size: 16px;
 }
 
 #comments {
@@ -175,6 +186,8 @@ input[type="checkbox"]:checked + label {
 
 #submit {
   grid-area: submit;
+  align-self: end;
+
   border: none;
   background-color: var(--bright-pink);
   color: white;
