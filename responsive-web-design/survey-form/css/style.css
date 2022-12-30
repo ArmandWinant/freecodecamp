@@ -50,7 +50,7 @@ header {
 }
 
 hr {
-  width: 170px;
+  width: 178px;
   border: 0;
   border-top: 5px solid var(--teal-blue);
   border-radius: 3px;
@@ -59,8 +59,9 @@ hr {
 #title {
   color: var(--bright-pink);
   font-size: 38px;
-  line-height: 52px;
-  font-family: 'Oswald', sans-serif;
+  line-height: 48px;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
 }
 
@@ -74,6 +75,15 @@ hr {
 #description {
   margin: 10px 0 0 0;
   color: var(--light-grey);
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Outfit', sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+#description span {
+  color: var(--bright-pink);
 }
 
 #survey-form {
@@ -84,12 +94,18 @@ hr {
     "donut"
     "contact"
     "submit";
+  
+  font-family: 'Poppins', sans-serif;
 }
 
 fieldset {
   border: 2px solid var(--teal-blue);
   border-radius: 16px;
   box-sizing: border-box;
+}
+
+legend {
+  text-transform: uppercase;
 }
 
 #donut {
@@ -100,9 +116,13 @@ fieldset {
   grid-area: contact;
 }
 
+h3 {
+  text-transform: capitalize;
+}
+
 .input-group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-auto-rows: 30px;
   gap: 10px;
 }
@@ -122,6 +142,8 @@ input[type="checkbox"] + label {
 
   color: white;
   border-radius: 4px;
+
+  font-size: 12px;
 }
 
 input[type="radio"]:hover + label,
