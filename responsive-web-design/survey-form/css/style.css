@@ -1,5 +1,5 @@
 .black-border {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -47,7 +47,7 @@ main {
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 header {
@@ -100,7 +100,7 @@ hr {
     "contact"
     "submit";
   font-family: var(--round-font);
-  gap: 20px;
+  /* gap: 20px 0; */
 
   font-weight: 300;
 }
@@ -109,8 +109,8 @@ fieldset {
   border: 1px solid var(--teal-blue);
   border-radius: 16px;
 
-  margin: 30px 0 0 0;
-  padding: 20px 15px;
+  /* margin: 30px 0 0 0; */
+  padding: 15px;
 
   display: flex;
   flex-direction: column;
@@ -119,7 +119,6 @@ fieldset {
 
 legend {
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 #donut {
@@ -133,7 +132,7 @@ legend {
 h3 {
   text-transform: capitalize;
 
-  margin: 0 0 5px 0;
+  margin: 0 0 8px 0;
 }
 
 .input-group {
@@ -224,13 +223,10 @@ input[type="checkbox"]:checked + label {
   main {
     width: 90vw;
     max-width: 880px;
-    gap: 40px;
   }
 
   header {
     max-width: 85%;
-    /* flex-direction: row; */
-    /* gap: 60px; */
   }
 
   #survey-form {
@@ -239,7 +235,7 @@ input[type="checkbox"]:checked + label {
       "donut contact"
       "submit submit"
     ;
-    gap: 30px;
+    /* gap: 30px 20px; */
   }
   
   fieldset {
