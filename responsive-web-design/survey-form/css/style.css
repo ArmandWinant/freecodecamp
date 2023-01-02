@@ -101,6 +101,7 @@ hr {
     "submit";
   font-family: var(--round-font);
   /* gap: 20px 0; */
+  gap: 0;
 
   font-weight: 300;
 }
@@ -194,6 +195,10 @@ input[type="checkbox"]:checked + label {
   font-size: 16px;
 }
 
+#comments-label {
+  height: 100%;
+}
+
 #comments {
   height: 120px;
   padding: 5px 10px;
@@ -241,4 +246,6 @@ input[type="checkbox"]:checked + label {
   fieldset {
     margin-top: 0;
   }
+
+  /* TODO: fix the textarea height */
 }
