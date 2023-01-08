@@ -47,7 +47,9 @@ main {
 
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
+  gap: 40px;
+
+  margin: 40px auto;
 }
 
 header {
@@ -100,8 +102,7 @@ hr {
     "contact"
     "submit";
   font-family: var(--round-font);
-  /* gap: 20px 0; */
-  gap: 0;
+  gap: 40px 20px;
 
   font-weight: 300;
 }
@@ -200,10 +201,14 @@ input[type="checkbox"]:checked + label {
 
 #comments-label {
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
 }
 
 #comments {
-  height: 120px;
+  min-height: 120px;
+  height: 100%;
   padding: 5px 10px;
 }
 
@@ -231,6 +236,7 @@ input[type="checkbox"]:checked + label {
   main {
     width: 90vw;
     max-width: 880px;
+    margin-top: 20px;
   }
 
   header {
@@ -243,12 +249,13 @@ input[type="checkbox"]:checked + label {
       "donut contact"
       "submit submit"
     ;
-    /* gap: 30px 20px; */
   }
   
   fieldset {
     margin-top: 0;
   }
 
-  /* TODO: fix the textarea height */
+  #comments {
+    justify-self: stretch;
+  }
 }
