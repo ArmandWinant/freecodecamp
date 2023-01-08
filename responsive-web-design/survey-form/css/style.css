@@ -179,19 +179,19 @@ input[type="checkbox"]:checked + label {
   height: 40px;
   outline: none;
   padding: 0 10px;
+
+  font-size: 16px;
+  font-family: var(--round-font);
+  color: var(--dark-grey);
 }
 
 .full-width-input:focus {
   border: 3px solid var(--bright-pink);
-  color: var(--dark-grey);
-  font-size: 16px;
 }
 
 .full-width-input::placeholder {
   color: var(--light-grey);
-  font-family: var(--round-font);
   font-weight: 300;
-  font-size: 16px;
 }
 
 #comments-label {
